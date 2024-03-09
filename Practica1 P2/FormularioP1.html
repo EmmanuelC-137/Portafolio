@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario</title>
+        <meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/estilos1.css">
+    </head>
+    <body>
+		<br><h1><br></h1>
+		<form method="post" action="Practica1.php">
+			<fieldset>
+				<legend>Información General</legend>
+				<label>Nombre:</label>
+				<input type="text" name="nombre" placeholder="Nombre">
+				<label>Apellido paterno:</label>
+				<input type="text" name="Ap" placeholder="Apellido paterno">
+				<label>Apellido materno:</label>
+				<input type="text" name="Am" placeholder="Apellido materno"><br>
+
+				<label>Nombre de usuario:</label>
+				<input type="text" name="usuario" placeholder="Usuario">
+				<label>Contraseña:</label>
+				<input type="password" name="passw" placeholder="Password">
+				<label>Fecha de nacimiento:</label>
+				<input type="date" name="Fechan"><br>
+			</fieldset>
+
+			<fieldset>
+				<legend>Datos de facturación</legend>
+
+				<label>País:</label>
+				<select name="pais" id="pais" onchange="cargarCiudades()">
+				<option value="Canada">Canada</option>
+				<option value="EUA">Estados Unidos</option>
+				<option value="Mexico">México</option>
+				<option value="Japón">Japón</option>
+				<option value="Australia">Australia</option>
+				<option value="Alemania">Alemania</option>
+				<option value="Brasil">Brasil</option>
+				</select>
+
+				<label>Ciudad:</label>
+				<select name="ciudad" id="ciudad"></select>
+
+				<label>Calle:</label>
+				<input type="text" name="calle" placeholder="Calle"><br>
+
+				<label>Número de casa:</label>
+				<input type="number" name="No" placeholder="No. Casa">
+				<label>Colonia:</label>
+				<input type="text" name="Col" placeholder="Colonia">
+				<label>E-mail:</label>
+				<input type="email" name="email" placeholder="E-mail"><br>
+
+				<label>R.F.C:</label>
+				<input type="text" name="rfc" placeholder="RFC">
+				<label>C.P:</label>
+				<input type="number" name="cp" placeholder="CP">
+				<input type="submit" name="envio" id="envio" value="Enviar formulario">
+				<input type="reset" name="recet"><br>
+			</fieldset>
+		</form>
+		<script src="script/script1.js"></script>
+    </body>
+</html>
