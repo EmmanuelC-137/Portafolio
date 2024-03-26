@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Registro</title>
+		<link rel="stylesheet" href="Estilos/stylelog.css">
+	</head>
+	<body>
+
+		<div class="login-container">
+			<h2>Registrarse</h2>
+			<form id="registroForm" action="ConexionReg.php" method="post">
+				<label>Nombre(s):</label>
+				<input type="text" name="nombre" placeholder="Nombre(s)" required>
+				<br>
+				<label>Apellido Paterno</label>
+				<input type="text" name="Ap" placeholder="Apellido Paterno" required>
+				<br>
+				<label>Apellido Materno</label>
+				<input type="text" name="Am" placeholder="Apellido Materno">
+				<br>
+				<label>Usuario</label>
+				<input type="text" name="usuario" placeholder="Usuario" required>
+				<br>
+				<label>Email</label>
+				<input type="email" name="email" placeholder="Email" required>
+				<br>
+				<label>Contraseña</label>
+				<input type="password" name="pass" placeholder="Contraseña" id="password" required>
+				<br>
+				<label>Confirmar contraseña</label>
+				<input type="password" placeholder="Confirmar Contraseña" id="confirmPassword" required>
+				<br>
+				<div id="errorContainer" style="color: red; display: none;">Las contraseñas no coinciden</div>
+				<button type="button" id="submitButton" name="enviar" value="Guardar Registro">Registrarse</button>
+			</form>
+			<a href="Login.html">Iniciar Sesión</a>
+		</div>
+		<script src="Script/script1.js"></script>
+	</body>
+</html>
